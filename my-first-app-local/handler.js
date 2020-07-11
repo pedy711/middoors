@@ -5,8 +5,7 @@ module.exports.hello = async event => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'This is my first handler!',
-        input: event,
+        message: 'Do I need to deploy again?',
       },
       null,
       2
