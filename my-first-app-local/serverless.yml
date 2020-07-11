@@ -1,0 +1,16 @@
+service: my-first-app-local
+# app and org for use with dashboard.serverless.com
+app: my-first-app
+org: pedramkhoshdani
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: users/create
+          method: get
